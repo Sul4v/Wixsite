@@ -1,0 +1,247 @@
+
+/* Fonts Import */
+    /* Manrope */ @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap'); 
+    /* Roboto */ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+    /* Amatic SC */ @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+    /* Gloria Hallelujah */ @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+    /* EB Garamond */ @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+    /* Oswald bold */ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+    /* Poppins */ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Global Selectors */
+
+ul{
+    list-style: none;
+}
+
+
+/* Navstyles */
+
+nav{
+    background: #f2f2f2;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+}
+
+nav .container{
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.container .nav-left ul, .nav-right ul{
+    display: flex;
+
+}
+
+.nav-left ul div{
+    padding: .5rem 1rem;
+}
+
+.nav-left ul div:hover{
+    cursor: pointer;
+}
+
+.nav-left ul div li:hover{
+    color: #4664a1;
+}
+
+.nav-left ul div li{
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.8rem;
+    color: #6e6e6e;
+}
+
+.nav-right ul li i{
+    color: #999999;
+    transition: all 0.3s ease;
+}
+
+.nav-right ul li i:hover{
+    color: #4664a1;
+    cursor: pointer;
+}
+
+.nav-right ul li{
+    margin: 0 0.8rem;
+    font-size: 1.2rem;
+}
+
+/* Section A */
+
+#section-a {
+    width: 100%;
+    height: 75vh;
+    background: url("img/poster.jpg") no-repeat center -3rem/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+#section-a .section-a-container{
+    text-align: center;
+    /* background: grey; */
+    /* display: inline-block; */
+    color: white;
+    margin-bottom: 5rem;
+}
+
+#section-a .section-a-container div p{
+    font-family: 'Manrope', sans-serif;
+}
+
+#section-a .section-a-container div h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+#section-a-detail{
+    font-size: 1.2rem;
+}
+
+/* Section B */
+
+#section-b{
+    background: white;
+    height: 70vh;
+    width: 100%;
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+#section-b #section-b-text-container{
+    background: white;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 3rem;
+}
+
+#section-b #section-b-container{
+    background: white;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-b #section-b-container div{
+    height: 18rem;
+    width: 18rem;
+    margin: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#box-1{
+    background: url("img/travel.jpg") no-repeat center center/cover;
+}
+
+#box-2{
+    background: url("img/eat.jpg") no-repeat center center/cover;
+}
+
+#box-3{
+    background: url("img/relax.jpg") no-repeat center center/cover;
+}
+
+#section-b #section-b-container div .text-box{
+    height: 3.5rem;
+    width: 10rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #2573DA;
+    transition: background-color 0.3s ease;
+}
+
+#section-b #section-b-container div .text-box:hover{
+    cursor: pointer;
+    background-color: rgba(65, 150, 224, 0.9);
+    color: #ffffff;
+}
+
+#section-b #section-b-container div .text-box h1{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+}
+
+/* Section C */
+
+#section-c{
+    width: 100%;
+    height: 20vh;
+    background: #F2F2F2;
+}
+
+#section-c .section-c-container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section-c .section-c-container #section-c-first{
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5rem;
+    padding: 0 3rem;
+    padding-right: 6rem;
+    border-right: #797979 2px solid;
+}
+
+#section-c .section-c-container #section-c-second{
+    line-height: 0.65rem;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#text-travel{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.65rem;
+}
+
+#text-blog{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    text-align: right;
+}
+
+#text-tour{
+    font-family: 'Oswald', sans-serif;
+    display: inline;
+}
+
+#text-plane{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline;
+}
+
+#section-c-fifth{
+    line-height: 0.9rem;
+}
